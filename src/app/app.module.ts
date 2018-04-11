@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CoreModule } from './core/core.module';
 
+// add Angular Material components here
 import { AppComponent } from './app.component';
 
 
