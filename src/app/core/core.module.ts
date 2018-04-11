@@ -14,6 +14,9 @@ import { PlatformModule } from '@angular/cdk/platform';
 import { ObserversModule } from '@angular/cdk/observers';
 
 @NgModule({
+  declarations: [
+    NavComponent
+  ],
   imports: [
     CommonModule
   ],
@@ -25,7 +28,6 @@ import { ObserversModule } from '@angular/cdk/observers';
     MatRadioModule,
     MatRippleModule,
     ObserversModule,
-    PlatformModule],
-  declarations: []
+    PlatformModule]
 })
 export class CoreModule { }
