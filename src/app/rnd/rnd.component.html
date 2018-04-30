@@ -1,6 +1,27 @@
 <p>
   rnd works!
 </p>
-<div *ngIf="false" (click)="aMethod()" style="background-color: red;">test</div>
+<div (click)="aMethod()" style="background-color: red;">test</div>
 <input [(ngModel)]="aValue"> 
 {{aValue | uppercase }} {{ "is coming" }}
+<ul>
+  <li *ngFor="let num of anArray">
+    {{ num }}
+  </li>
+</ul>
+<div (click)="updateNums()">click me</div>
+{{ popped }}
+<ul *ngIf="anArray.length == 4">
+  <li *ngFor="let hero of heroes">
+    {{ hero.name }}
+  </li>
+</ul>
+<input [value]="someProperty">
+<button [disabled]="isUnchanged">Cancel is disabled</button>
+<p><span>"{{evilTitle}}" is the <i>interpolated</i> evil title.</span></p>
+<p>"<span [innerHTML]="evilTitle"></span>" is the <i>property bound</i> evil title."</p>
+<table border=1>
+  <tr><td [attr.colspan]="1 + 6">One-Two</td></tr>
+  <tr><td>Five</td><td>Six</td><td>Six</td><td>Six</td><td>Six</td><td>Six</td><td>Six</td></tr>
+</table>
+<h1 (mouseover)="h1($event)">hi there {{ hone }}</h1>
